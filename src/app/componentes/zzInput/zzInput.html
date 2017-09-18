@@ -1,0 +1,11 @@
+<br>
+<span>{{nombre}}:<input type="text" value={{valor}}/> 
+
+<Button *ngIf="tipo=='T1'" (click)="alerta()">Pulsame</Button>
+</span>
+
+<div *ngIf="tipo=='T2'">
+
+	<input *ngFor="let n of [1,2,3,4]" type="text" value={{valor}}/> 
+
+</div>

@@ -1,0 +1,23 @@
+<!--
+<zz-input
+	[nombre]="nombre_1"
+	[valor]="valor_1"
+	[tipo]="tipo_1"
+  ></zz-input>
+
+<zz-input
+	[nombre]="nombre_2"
+	[valor]="valor_2"
+	[tipo]="tipo_2"
+  ></zz-input>
+  -->
+
+ <slider></slider>
+
+ <div *ngFor="let obj of objetos">
+	<zz-input
+	[nombre]="obj.nombre"
+	[valor]="obj.valor"
+	[tipo]="obj.tipo"
+  ></zz-input>
+ </div>
